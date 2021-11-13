@@ -1,2 +1,2 @@
 # CICD-labs
-Testing integration betwenn different architectures 
+Testing integration between different architectures 
