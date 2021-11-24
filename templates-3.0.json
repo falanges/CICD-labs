@@ -1,0 +1,24 @@
+ {
+         "type":3,
+         "title":"Odoo 15 sin Dominio",
+         "description":"Odoo 15 con PostgreSQL",
+         "note":"Despliegue de una Instancia Odoo 15 conectada a una base de datos PostgreSQL",
+         "categories":[
+            "ERP",
+            "Odoo Argentina",
+            "Moldeo"
+         ],
+         "platform":"linux",
+         "logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/odoo.png",
+         "repository":{
+            "url":"https://github/falanges/CICD-labs.git",
+            "stackfile":"stacks/odoo15/docker-compose.yml"
+         },
+         "env":[
+            {
+               "name":"POSTGRES_DB_PASSWORD",
+               "label":"Database password",
+               "description":"Password used by the Postgres user."
+            }
+         ]
+      }
