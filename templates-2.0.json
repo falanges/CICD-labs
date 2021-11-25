@@ -1,4 +1,7 @@
- {
+{
+   "version":"2",
+   "templates": [
+      {
          "type":3,
          "title":"Odoo 15 sin Dominio",
          "description":"Odoo 15 con PostgreSQL",
@@ -22,3 +25,5 @@
             }
          ]
       }
+   ]
+}
