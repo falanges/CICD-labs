@@ -3,7 +3,7 @@ services:
   db:
     image: postgres:13
     environment:
-      - POSTGRES_PASSWORD=${POSTGRES_DB_PASSWORD}
+      - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - POSTGRES_DB=postgres
     restart: always             # run as a service
@@ -20,13 +20,12 @@ services:
     environment:
       - HOST=db
       - USER=odoo
-      - PASSWORD=${POSTGRES_DB_PASSWORD}
+      - PASSWORD=odoo
     volumes:
       - addons:/mnt/extra-addons
       - etc:/etc/odoo
       - web-data:/var/lib/odoo/
     restart: always             # run as a service
-
 volumes:
   postgresql:
   addons:
